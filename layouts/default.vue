@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app>
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -24,7 +24,8 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar
+    
+    <!-- <v-app-bar
       :clipped-left="clipped"
       fixed
       app
@@ -56,8 +57,56 @@
       >
         <v-icon>mdi-menu</v-icon>
       </v-btn>
+    </v-app-bar> -->
+    <v-app-bar
+      light
+      color="white"
+      elevate-on-scroll
+      app
+    >
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+
+      <v-toolbar-title>Rizal Ammar</v-toolbar-title>
+
+      <v-spacer></v-spacer>
+
+      <v-btn 
+        text 
+        class="text-capitalize" 
+        capitalize 
+        nuxt 
+        color="primary">
+      About Me</v-btn>
+
+      <v-btn 
+        text 
+        class="text-capitalize" 
+        capitalize 
+        nuxt>
+      Portfolio</v-btn>
+
+      <v-btn 
+        text 
+        class="text-capitalize" 
+        capitalize 
+        nuxt>
+      Contact</v-btn>
+
+      <v-spacer></v-spacer>
+
+      <v-btn icon>
+        <v-icon>mdi-white-balance-sunny</v-icon>
+      </v-btn>
+
+      <!-- <v-btn icon>
+        <v-icon>mdi-heart</v-icon>
+      </v-btn> -->
+
+      <v-btn icon>
+        <v-icon>mdi-dots-vertical</v-icon>
+      </v-btn>
     </v-app-bar>
-    <v-main>
+    <v-main >
       <v-container>
         <Nuxt />
       </v-container>
