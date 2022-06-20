@@ -4,7 +4,7 @@
       <v-row align="center">
         <v-col cols="6">
           <p>Hello, I'm Rizal</p>
-          <h1 class="display-3 primary--text font-weight-medium my-2" color="primary">Web Developer</h1>
+          <h1 class="display-3 primary--text font-weight-black my-2" color="primary">Web Developer</h1>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, ratione? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque modi, amet asperiores sit provident optio.</p>
         </v-col>
         <v-col>
