@@ -49,6 +49,7 @@ export default {
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
+    treeShake: true,
     customVariables: ['~/assets/variables.scss'],
     theme: {
       dark: false,
@@ -73,8 +74,11 @@ export default {
 
   googleFonts: {
     families: {
-      Quicksand: true
-    }
+      Quicksand: [300, 400, 500, 600, 700]
+    },
+    download: true,
+    base64: false,
+    fontsPath: '~assets/fonts'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

@@ -66,29 +66,31 @@
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
-      <v-toolbar-title>Rizal Ammar</v-toolbar-title>
+      <v-toolbar-title></v-toolbar-title>
 
       <v-spacer></v-spacer>
 
       <v-btn 
         text 
-        class="text-capitalize" 
+        class="text-capitalize mx-2 hidden-xs-only" 
         capitalize 
-        nuxt 
-        color="primary">
+        nuxt
+        to="/">
       About Me</v-btn>
 
       <v-btn 
         text 
-        class="text-capitalize" 
+        class="text-capitalize mx-2 hidden-xs-only" 
         capitalize 
+        to="/portfolio"
         nuxt>
       Portfolio</v-btn>
 
       <v-btn 
         text 
-        class="text-capitalize" 
+        class="text-capitalize mx-2 hidden-xs-only" 
         capitalize 
+        to="/contact"
         nuxt>
       Contact</v-btn>
 
@@ -148,13 +150,18 @@ export default {
       items: [
         {
           icon: 'mdi-apps',
-          title: 'Welcome',
+          title: 'About Me',
           to: '/'
         },
         {
+          icon: 'mdi-apps',
+          title: 'Portfolio',
+          to: '/portfolio'
+        },
+        {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
+          title: 'Contact',
+          to: '/contact'
         }
       ],
       miniVariant: false,
@@ -167,7 +174,5 @@ export default {
 </script>
 
 <style>
-  * {
-    font-family: 'Quicksand', 'sans-serif';
-  }
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
 </style>
