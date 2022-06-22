@@ -131,10 +131,42 @@
       </v-list>
     </v-navigation-drawer>
     <v-footer
-      :absolute="!fixed"
       app
+      padless
     >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+      <v-row justify="center">
+        <v-col>
+          <v-row justify="center">
+            <v-btn
+              icon
+              class="mx-4 primary--text"
+            >
+              <v-icon size="24px">mdi-instagram</v-icon>
+            </v-btn>
+            <v-btn
+              icon
+              class="mx-4 primary--text"
+            >
+              <v-icon size="24px">mdi-linkedin</v-icon>
+            </v-btn>
+            <v-btn
+              icon
+              class="mx-4 primary--text"
+            >
+              <v-icon size="24px">mdi-whatsapp</v-icon>
+            </v-btn>
+            <v-btn
+              icon
+              class="mx-4 primary--text"
+            >
+              <v-icon size="24px">mdi-facebook</v-icon>
+            </v-btn>
+          </v-row>
+        </v-col>
+        <v-col cols="12" class="text-center">
+          <span>Build with love <3 &copy; {{ new Date().getFullYear() }}</span>
+        </v-col>
+      </v-row>
     </v-footer>
   </v-app>
 </template>
@@ -149,7 +181,7 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'mdi-apps',
+          icon: 'mdi-account',
           title: 'About Me',
           to: '/'
         },
