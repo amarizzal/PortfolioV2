@@ -24,7 +24,7 @@
       </v-row>
 
       <!-- About Me -->
-      <v-row align="center"  class="my-16 py-16">
+      <v-row align="center" class="my-16 py-16">
         <v-col cols="12" md="5" class="pt-10 pr-10">
           <v-card style="height: 200px" flat class="grey lighten-2 rounded-lg"></v-card>
         </v-col>
