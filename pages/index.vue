@@ -44,12 +44,12 @@
             <v-timeline-item>
               <template v-slot:opposite>
                 <span class="font-weight-bold">
-                  2019
+                  2022
                 </span>
               </template>
               <div class="py-4">
                 <h2 class="headline font-weight-light">
-                  Lorem Ipsum
+                  Freelancer
                 </h2>
                 <div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
               </div>
@@ -57,12 +57,12 @@
             <v-timeline-item>
               <template v-slot:opposite>
                 <span class="font-weight-bold">
-                  2019
+                  2021
                 </span>
               </template>
               <div class="py-4 text-right">
                 <h2 class="headline font-weight-light">
-                  Lorem Ipsum
+                  Front-End Web Developer
                 </h2>
                 <div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
               </div>
@@ -70,7 +70,7 @@
             <v-timeline-item>
               <template v-slot:opposite>
                 <span class="font-weight-bold">
-                  2019
+                  2019 - 2020
                 </span>
               </template>
               <div class="py-4">

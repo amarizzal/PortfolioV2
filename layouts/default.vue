@@ -69,7 +69,7 @@
       <v-toolbar-title></v-toolbar-title>
 
       <v-spacer></v-spacer>
-
+      
       <v-btn 
         text 
         class="text-capitalize mx-2 hidden-xs-only" 
@@ -132,39 +132,32 @@
     </v-navigation-drawer>
     <v-footer
       app
-      padless
+      class="py-4"
+      absolute
     >
       <v-row justify="center">
         <v-col>
-          <v-row justify="center">
-            <v-btn
-              icon
-              class="mx-4 primary--text"
-            >
-              <v-icon size="24px">mdi-instagram</v-icon>
-            </v-btn>
+          <v-row justify="center" class="p-4">
+            <a href="https://www.instagram.com/amarizzal_/" target="_blank" style="text-decoration: none" rel="noopener noreferrer">
+              <v-btn
+                icon
+                class="mx-4 primary--text"
+              >
+                <v-icon size="24px">mdi-instagram</v-icon>
+              </v-btn>
+            </a>
+            <a href="https://www.linkedin.com/in/rizal-ammar-bb57b91b3/" target="_blank" style="text-decoration: none" rel="noopener noreferrer">
             <v-btn
               icon
               class="mx-4 primary--text"
             >
               <v-icon size="24px">mdi-linkedin</v-icon>
             </v-btn>
-            <v-btn
-              icon
-              class="mx-4 primary--text"
-            >
-              <v-icon size="24px">mdi-whatsapp</v-icon>
-            </v-btn>
-            <v-btn
-              icon
-              class="mx-4 primary--text"
-            >
-              <v-icon size="24px">mdi-facebook</v-icon>
-            </v-btn>
+            </a>
           </v-row>
         </v-col>
         <v-col cols="12" class="text-center">
-          <span>Build with love <3 &copy; {{ new Date().getFullYear() }}</span>
+          <span>Build with love <span class="primary--text font-weight-bold"><3</span> by Rizal &copy; {{ new Date().getFullYear() }}</span>
         </v-col>
       </v-row>
     </v-footer>
