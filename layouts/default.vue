@@ -6,6 +6,7 @@
       :clipped="clipped"
       fixed
       app
+      class="sidebar"
     >
       <v-list>
         <v-list-item
@@ -14,6 +15,7 @@
           :to="item.to"
           router
           exact
+          class="sidebar__item"
         >
           <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
@@ -25,44 +27,12 @@
       </v-list>
     </v-navigation-drawer>
     
-    <!-- <v-app-bar
-      :clipped-left="clipped"
-      fixed
-      app
-    >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-btn
-        icon
-        @click.stop="miniVariant = !miniVariant"
-      >
-        <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
-      </v-btn>
-      <v-btn
-        icon
-        @click.stop="clipped = !clipped"
-      >
-        <v-icon>mdi-application</v-icon>
-      </v-btn>
-      <v-btn
-        icon
-        @click.stop="fixed = !fixed"
-      >
-        <v-icon>mdi-minus</v-icon>
-      </v-btn>
-      <v-toolbar-title v-text="title" />
-      <v-spacer />
-      <v-btn
-        icon
-        @click.stop="rightDrawer = !rightDrawer"
-      >
-        <v-icon>mdi-menu</v-icon>
-      </v-btn>
-    </v-app-bar> -->
     <v-app-bar
       light
       color="white"
       elevate-on-scroll
       app
+      class="navbar"
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
@@ -72,7 +42,7 @@
       
       <v-btn 
         text 
-        class="text-capitalize mx-2 hidden-xs-only" 
+        class="navbar__item text-capitalize mx-2 hidden-xs-only" 
         capitalize 
         nuxt
         to="/">
@@ -80,33 +50,27 @@
 
       <v-btn 
         text 
-        class="text-capitalize mx-2 hidden-xs-only" 
+        class="navbar__item text-capitalize mx-2 hidden-xs-only" 
         capitalize 
         to="/portfolio"
         nuxt>
       Portfolio</v-btn>
 
-      <v-btn 
-        text 
-        class="text-capitalize mx-2 hidden-xs-only" 
-        capitalize 
-        to="/contact"
-        nuxt>
-      Contact</v-btn>
-
       <v-spacer></v-spacer>
 
-      <v-btn icon>
-        <v-icon>mdi-white-balance-sunny</v-icon>
-      </v-btn>
 
       <!-- <v-btn icon>
         <v-icon>mdi-heart</v-icon>
       </v-btn> -->
 
-      <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
+<a href="https://drive.google.com/file/d/1jgB0Q3lpmKxWn4vexAvWY3jXsI_ed4Du/view?usp=sharing">
+      <v-btn 
+        depressed
+        color="primary"
+      >
+        Download CV
       </v-btn>
+      </a>
     </v-app-bar>
     <v-main >
       <v-container>
@@ -132,13 +96,13 @@
     </v-navigation-drawer>
     <v-footer
       app
-      class="py-4"
+      class="footer py-4"
       absolute
     >
       <v-row justify="center">
         <v-col>
           <v-row justify="center" class="p-4">
-            <a href="https://www.instagram.com/amarizzal_/" target="_blank" style="text-decoration: none" rel="noopener noreferrer">
+            <a class="footer__socialmedia" href="https://www.instagram.com/amarizzal_/" target="_blank" style="text-decoration: none" rel="noopener noreferrer">
               <v-btn
                 icon
                 class="mx-4 primary--text"
@@ -146,7 +110,7 @@
                 <v-icon size="24px">mdi-instagram</v-icon>
               </v-btn>
             </a>
-            <a href="https://www.linkedin.com/in/rizal-ammar-bb57b91b3/" target="_blank" style="text-decoration: none" rel="noopener noreferrer">
+            <a class="footer__socialmedia" href="https://www.linkedin.com/in/rizal-ammar-bb57b91b3/" target="_blank" style="text-decoration: none" rel="noopener noreferrer">
             <v-btn
               icon
               class="mx-4 primary--text"
@@ -156,7 +120,7 @@
             </a>
           </v-row>
         </v-col>
-        <v-col cols="12" class="text-center">
+        <v-col cols="12" class="footer__text text-center">
           <span>Build with love <span class="primary--text font-weight-bold"><3</span> by Rizal &copy; {{ new Date().getFullYear() }}</span>
         </v-col>
       </v-row>
@@ -183,11 +147,6 @@ export default {
           title: 'Portfolio',
           to: '/portfolio'
         },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Contact',
-          to: '/contact'
-        }
       ],
       miniVariant: false,
       right: true,
@@ -200,4 +159,8 @@ export default {
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+  a {
+    text-decoration: none;
+  }
 </style>

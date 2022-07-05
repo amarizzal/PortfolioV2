@@ -1,0 +1,16 @@
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+a.nuxt-link-active {
+    font-weight: bold;
+}
+
+a.nuxt-link-exact-active {
+    color: orangered !important;
+}

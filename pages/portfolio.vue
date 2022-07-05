@@ -1,7 +1,7 @@
 <template>
-    <v-row justify="center" align="center">
+    <v-row class="portofolio" justify="center" align="center">
         
-        <v-col cols="12" class="text-center mt-2 mt-lg-7 mb-lg-4">
+        <v-col cols="12" class="portofolio__title text-center mt-2 mt-lg-7 mb-lg-4">
             <h1 class="display-3 primary--text my-2 mb-6 mb-lg-13 d" style="font-weight: 700;" color="primary">My Portfolio</h1>
         </v-col>
         <v-col cols="12">
@@ -13,19 +13,20 @@
                     sm="6"
                     md="6"
                     lg="4"
+                    class="portofolio__item"
                 >
                 <a :href=portofolio.link target="_blank" style="text-decoration: none" rel="noopener noreferrer">
                     <v-card elevation="7" class="mx-5 my-5 p-2 primary rounded-lg">
                          <v-img
                         :src="require(`~/assets/img/${portofolio.asset}`)"
-                        height="200px" cover class=""
+                        height="200px" cover class="portofolio__image"
                         ></v-img>
 
-                        <v-card-title class="white--text font-weight-bold">
+                        <v-card-title class="portofolio__title white--text font-weight-bold">
                         {{portofolio.title}}
                         </v-card-title>
 
-                        <v-card-subtitle class="font-weight-bold">
+                        <v-card-subtitle class="portofolio__content font-weight-bold">
                         {{portofolio.category}}
                         </v-card-subtitle>
                     </v-card>

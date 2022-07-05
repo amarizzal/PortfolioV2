@@ -1,12 +1,5 @@
 [
   {
-    "name": "contact",
-    "path": "/contact",
-    "component": "E:\\\\Web\\\\PROJECT\\\\MyPortofolioV2.0\\\\portfolio-v2\\\\pages\\\\contact.vue",
-    "chunkName": "pages/contact",
-    "_name": "_44fbd68a"
-  },
-  {
     "name": "inspire",
     "path": "/inspire",
     "component": "E:\\\\Web\\\\PROJECT\\\\MyPortofolioV2.0\\\\portfolio-v2\\\\pages\\\\inspire.vue",
