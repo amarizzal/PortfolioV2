@@ -19,7 +19,7 @@
           </v-btn>
         </v-col>
         <v-col cols="12" class="jumbotron__right hidden-sm-and-down" md="5">
-          <v-card style="height: 200px" flat class="grey lighten-2 rounded-lg">
+          <v-card style="height: 220px" flat class="grey lighten-2 rounded-lg">
             <v-img
               :src="require(`~/assets/img/jumbotron.jpg`)"
               contain class=""

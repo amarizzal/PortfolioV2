@@ -102,6 +102,14 @@
       <v-row justify="center">
         <v-col>
           <v-row justify="center" class="p-4">
+            <a class="footer__socialmedia" href="https://github.com/amarizzal" target="_blank" style="text-decoration: none" rel="noopener noreferrer">
+              <v-btn
+                icon
+                class="mx-4 primary--text"
+              >
+                <v-icon size="24px">mdi-github</v-icon>
+              </v-btn>
+            </a>
             <a class="footer__socialmedia" href="https://www.instagram.com/amarizzal_/" target="_blank" style="text-decoration: none" rel="noopener noreferrer">
               <v-btn
                 icon
