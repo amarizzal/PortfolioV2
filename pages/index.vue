@@ -3,7 +3,7 @@
     <v-col cols="12" sm="8" md="12">
 
       <!-- Jumbotron -->
-      <v-row align="center" justify="center"  class="jumbotron flex-column-reverse flex-md-row my-3 my-lg-16 pt-10">
+      <v-row align="center" justify="center"  class="jumbotron flex-column-reverse flex-md-row my-3 my-lg-8 pt-10">
         <v-col cols="12" md="7" class="jumbotron__left text-center text-md-left px-10 px-md-0">
           <p class="font-weight-bold headline mb-10 mb-md-6 mb-lg-0">Hello, I'm Rizal</p>
           <h1 class="display-3 primary--text my-2 mb-10 mb-md-4" style="font-weight: 700;" color="primary">Web Developer</h1>
@@ -18,8 +18,8 @@
             My Portfolio
           </v-btn>
         </v-col>
-        <v-col cols="12" class="jumbotron__right" md="5">
-          <v-card style="height: 220px" flat class="grey lighten-2 rounded-lg">
+        <v-col cols="12" class="jumbotron__right hidden-sm-and-down" md="5">
+          <v-card style="height: 340px" flat class="grey lighten-2 rounded-lg">
             <v-img
               :src="require(`~/assets/img/jumbotron.jpg`)"
               contain class=""
@@ -71,10 +71,10 @@
                 </span>
               </template>
               <div class="py-4">
-                <h2 class="headline font-weight-bold">
+                <h2 class="headline font-weight-bold text-right">
                   Freelancer
                 </h2>
-                <div class="">Bekerja tim sebagai penanggung jawab tampilan website mulai desain hingga pengembangannya (UI/UX dan Front-End)</div>
+                <div class="text-right">Bekerja tim sebagai penanggung jawab tampilan website mulai desain hingga pengembangannya (UI/UX dan Front-End)</div>
               </div>
             </v-timeline-item>
             <v-timeline-item>
@@ -83,9 +83,9 @@
                   2021
                 </span>
               </template>
-              <div class="py-4 text-right">
+              <div class="py-4">
                 <h2 class="headline font-weight-bold">
-                  Front-End Web Developer
+                  Front-End Developer - PT. Gumcode
                 </h2>
                 <div class="">Bekerja di PT. Gumcode Indonesia mengembangkan tampilan web berdasarkan desain tim UI/UX serta mengintegrasikannya dengan Back-End.</div>
               </div>
@@ -97,10 +97,10 @@
                 </span>
               </template>
               <div class="py-4">
-                <h2 class="headline font-weight-bold">
+                <h2 class="headline font-weight-bold text-right">
                   Magang
                 </h2>
-                <div class="">Bertugas slicing desain web ke project React dan Membuat tutorial framework css Tailwind</div>
+                <div class=" text-right">Bertugas slicing desain web ke project React dan Membuat tutorial framework css Tailwind</div>
               </div>
             </v-timeline-item>
           </v-timeline>
